@@ -1,0 +1,252 @@
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(117, 255, 248);
+}
+
+/*Global*/
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button_1{
+  height: 38px;
+  background: rgb(1, 255, 242);
+  border:0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color:hwb(0 100% 0%);
+}
+
+.dark{
+  padding:15px;
+  background: rgb(70, 70, 70);
+  color: rgb(1, 255, 242);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*   Header   */
+header{
+  background:rgb(35, 83, 87);
+  color:#fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: rgb(1, 255, 242) 3px solid;
+}
+
+
+header a{
+  color:#FFF;
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size: 16px;
+}
+
+
+
+
+header li{
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+
+header #branding{
+  float: left;
+}
+
+
+header #branding h1{
+  margin: 0;
+font-size: 20;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+
+header .highlight, header .current a{
+  color:rgb(1, 255, 242);
+  font-weight: bold;
+}
+
+header a:hover{
+  color: rgb(35, 66, 87);
+  font-weight: bold;
+}
+
+/*     Showcase is an id      */
+#showcase{
+  min-height: 400px;
+  background:url("../img/showcase.jpg") no-repeat; 
+  background-size: 100%;
+  background-attachment: fixed;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+
+/*    Newsletter      */
+
+#newsletter{
+  padding: 15px;
+  color: #fff;
+  background:rgb(35, 83, 87);
+}
+
+#newsletter h1{
+  float: left;
+}
+
+#newsletter form{
+  float: right;
+  margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height:25px;
+  width: 250px;
+}
+
+
+/*             Boxes             */
+#boxes{
+  margin-top: 20px;
+}
+
+#boxes .box{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+#boxes .box{
+  float: left;
+  width: 30%;
+  padding:10px;
+  text-align: center;
+  border: 1px;
+  border-color: #005212;
+
+}
+
+#boxes img{
+  border-radius: 15px;
+}
+
+#boxes .box img{
+  width: 50%;
+}
+
+/*    sidebar    */
+
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+
+aside#sidebar .ask input, aside#sidebar .ask textarea{
+  width: 90%;
+  padding: 5px;
+}
+
+/*   Main col   */
+
+article#main-col{
+  float: left;
+  width: 65%;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  background-color: rgb(35, 83, 87);
+  text-align: center;
+  color: #fff;
+}
+
+/*    Services    */
+
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  color: ghostwhite;
+  border: #ccc solid 1px;
+  margin-bottom: 5px;
+  background: url("../img/services.jpg");
+  background-size: 120%;
+  background-position: 0 -200px;
+  text-decoration-color: #fff;
+
+}
+
+.ext{
+  color: #fff;
+  padding: 10px;
+  background: rgb(255, 217, 0);
+  text-decoration: none;
+  text-transform:uppercase;
+  font-size: 10px;
+}
+
+/*   Media Queries   */
+@media (max-width:768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+
+  #showcase h1{
+    margin-top: 40px;
+  }
+
+  #newsletter button, .ask button{
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter form input[type="email"], .quote input, .quote textarea{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
