@@ -45,7 +45,10 @@ header{
   border-bottom: rgb(1, 255, 242) 3px solid;
 }
 
-
+header #homelink{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+}
 header a{
   color:#FFF;
   text-decoration: none;
@@ -53,7 +56,10 @@ header a{
   font-size: 16px;
 }
 
-
+header #homelink:hover{
+  text-transform: uppercase;
+  color: currentColor;
+}
 
 
 header li{
@@ -84,14 +90,14 @@ header .highlight, header .current a{
 }
 
 header a:hover{
-  color: rgb(35, 66, 87);
-  font-weight: bold;
+  color: rgb(0, 0, 0);
+
 }
 
 /*     Showcase is an id      */
 #showcase{
   min-height: 400px;
-  background:url("../img/showcase.jpg") no-repeat; 
+  background:url("./img/showcase.jpg") no-repeat; 
   background-size: 100%;
   background-attachment: fixed;
   text-align: center;
@@ -200,7 +206,7 @@ ul#services li{
   color: ghostwhite;
   border: #ccc solid 1px;
   margin-bottom: 5px;
-  background: url("../img/services.jpg");
+  background: url("./img/services.jpg");
   background-size: 120%;
   background-position: 0 -200px;
   text-decoration-color: #fff;
@@ -208,9 +214,9 @@ ul#services li{
 }
 
 .ext{
-  color: #fff;
+  color: rgb(1, 255, 242);
   padding: 10px;
-  background: rgb(255, 217, 0);
+  background: rgb(70, 70, 70);
   text-decoration: none;
   text-transform:uppercase;
   font-size: 10px;
@@ -240,6 +246,9 @@ ul#services li{
     margin-top: 40px;
   }
 
+  #showcase {
+    background-size: cover;
+  }
   #newsletter button, .ask button{
     display: block;
     width: 100%;
