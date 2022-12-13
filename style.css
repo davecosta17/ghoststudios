@@ -85,7 +85,7 @@ header nav{
 
 
 header .highlight, header .current a{
-  color:rgb(1, 255, 242);
+  color:#01fff2;
   font-weight: bold;
 }
 
@@ -97,11 +97,11 @@ header a:hover{
 /*     Showcase is an id      */
 #showcase{
   min-height: 400px;
-  background:url("./img/showcase.jpg") no-repeat; 
-  background-size: 100%;
+  background:url("https://images.unsplash.com/photo-1609702847389-b8aec1b0b929?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1563&q=80") no-repeat; 
+  background-size: cover;
   background-attachment: fixed;
   text-align: center;
-  color: #ffffff;
+  color: #01fff2;
 }
 
 
