@@ -247,7 +247,7 @@ ul#services li{
   }
 
   #showcase {
-    background-size: cover;
+    background-size: center;
   }
   #newsletter button, .ask button{
     display: block;
