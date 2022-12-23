@@ -271,4 +271,36 @@ ul#services li{
     width: 100%;
     margin-bottom: 5px;
   }
+
+  footer{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgb(45, 48, 48);
+    text-align: center;
+    color: #fff;
+  }
+
+  #newsletter{
+    padding: 15px;
+    color: #fff;
+    background:#2d3030;
+  }
+  
+
+  header{
+    background:#2d3030;
+    color:#fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: rgb(1, 255, 242) 3px solid;
+  }
+
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #252929;
+  }
 }
